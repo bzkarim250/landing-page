@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.landing-page {
+  display: flex;
+  gap: 3rem;
+  height: 100vh;
+  position: relative;
+  width: 95%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.landing-page__img {
+  height: 100%;
+  width: 100%;
+}
+.landing-page__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.landing-page__img--desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 10%;
+  color: #73114b;
+}
+.landing-page__img--desc__title {
+  font-size: 1.5rem;
+}
+.landing-page__img--desc__para {
+  font-size: 1rem;
+}
+
+.landing-page__login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  flex-basis: 40%;
+}
+.logo img {
+  border-radius: 50%;
+}
+
+.landing-page__login--title {
+  color: #525252;
+  font-size: 1.5rem;
+}
+.landing-page__login--para {
+  color: #525252;
+  font-size: 1rem;
+}
+.landing-page__login--google {
+  border: 2px solid #e8e8e8;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.landing-page__login--google a {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #828282;
+}
+.landing-page__login--google i {
+  padding-right: 0.5rem;
+}
+
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
