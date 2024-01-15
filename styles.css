@@ -1,46 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz=6..12&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   line-height: 1.5;
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
 }
+
 .landing-page {
-  display: flex;
-  gap: 3rem;
-  height: 100vh;
-  position: relative;
-  width: 95%;
-  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
   border-radius: 0.5rem;
+  padding: 0.5rem;
 }
+
 .landing-page__img {
   height: 100%;
   width: 100%;
+  max-height: 97vh;
 }
+
 .landing-page__img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
+
 .landing-page__img--desc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: absolute;
   bottom: 2.5rem;
-  left: 10%;
+  text-align: center;
+  left: 12%;
   color: #73114b;
 }
+
 .landing-page__img--desc__title {
   font-size: 1.5rem;
 }
+
 .landing-page__img--desc__para {
   font-size: 1rem;
 }
@@ -48,12 +54,38 @@ body {
 .landing-page__login {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding-top: 2rem;
-  flex-basis: 40%;
+  gap: 1rem;
+  padding-left: 6rem;
+  width: 80%;
+}
+
+.landing-page__login--form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.landing-page__login--form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.landing-page__login--form div a {
+  color: #7f265b;
+}
+.landing-page__login--form__account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+.landing-page__login--form__account a {
+  color: #7f265b;
 }
 .logo img {
   border-radius: 50%;
+  width: 10%;
 }
 
 .landing-page__login--title {
@@ -61,21 +93,63 @@ body {
   font-size: 1.5rem;
 }
 .landing-page__login--para {
-  color: #525252;
   font-size: 1rem;
+  color: #525252;
 }
-.landing-page__login--google {
+.landing-page__login--para__email {
+  text-align: center;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.landing-page__login--google,
+input {
   border: 2px solid #e8e8e8;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
 }
-.landing-page__login--google a {
+
+a,
+input {
   padding: 0.5rem;
   font-size: 1rem;
   text-decoration: none;
+}
+input:focus {
+  border: 1px solid #7f265b;
+}
+input[type="submit"] {
+  background-color: #7f265b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #73114b;
+}
+label {
+  color: #a1a1a1;
+  padding: 0.3rem;
+}
+::placeholder {
+  color: #ddd;
+}
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+input:checked {
+  border: none;
+  accent-color: #7f265b;
+}
+.landing-page__login--google a {
   color: #828282;
 }
+.landing-page__login--google a:hover {
+  color: #525252;
+}
+
 .landing-page__login--google i {
   padding-right: 0.5rem;
 }

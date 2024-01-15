@@ -39,20 +39,24 @@
         <div class="landing-page__login--google">
           <a href="#"><i class="fab fa-google"> </i>Continue with Google</a>
         </div>
-        <p class="landing-page__login--para">
-          -------------- Or Signin with Email ---------------
+        <p class="landing-page__login--para__email">
+          -------- Or Signin with Email --------
         </p>
         <form action="" class="landing-page__login--form">
-          <fieldset>
-            <input type="text" placeholder="mail@abc.com" />
-            <input type="password" placeholder="*************" />
+          <input type="text" placeholder="mail@abc.com" />
+          <input type="password" placeholder="*************" />
+          <div>
             <div>
-              <input type="checkbox" />
-              <label for="checkbox">Remember me</label>
-              <a href="#">Forgot password?</a>
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Remember Me</label>
             </div>
-          </fieldset>
+            <a href="#">Forgot password?</a>
+          </div>
+          <input type="submit" value="Login" />
         </form>
+        <p class="landing-page__login--form__account">
+          Not yet registered? <a href="#">Create an account</a>
+        </p>
       </div>
     </main>
   </body>
