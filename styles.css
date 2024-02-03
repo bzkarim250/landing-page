@@ -10,7 +10,6 @@ body {
   line-height: 1.5;
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
-  overflow: hidden;
 }
 
 .landing-page {
@@ -39,7 +38,7 @@ body {
   position: absolute;
   bottom: 2.5rem;
   text-align: center;
-  left: 12%;
+  left: 15%;
   color: #73114b;
 }
 
@@ -83,6 +82,8 @@ body {
   align-items: center;
   font-size: 1rem;
   color: #a1a1a1;
+  margin-top: 4rem;
+  align-self: center;
 }
 
 .landing-page__login--form__account a {
@@ -103,6 +104,9 @@ body {
 .landing-page__login--para__email {
   font-size: 1rem;
   color: #525252;
+}
+.landing-page__login--para__email {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
