@@ -16,7 +16,7 @@ body {
 .landing-page {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   min-height: 100vh;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -54,6 +54,7 @@ body {
 .landing-page__login {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   padding-left: 6rem;
   width: 80%;
@@ -114,9 +115,25 @@ body {
   }
 
   .landing-page__login {
-    padding-left: 2rem;
     width: 100%;
     height: 100vh;
+    padding: 0 2rem;
+    justify-content: start;
+  }
+
+  .landing-page__img--desc {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .logo img {
+    position: absolute;
+    top: 0;
+    width: 7%;
+    padding-top: 2rem;
   }
 }
 
